@@ -6,7 +6,6 @@
   text-decoration: none;
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
 }
 
 header {
@@ -60,6 +59,7 @@ li {
   opacity: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #fff;
 }
 
 .heart-a:hover {
@@ -83,7 +83,6 @@ li {
 }
 
 .nu1 {
-  width: 100vw;
   height: 100vh;
 }
 
@@ -173,7 +172,7 @@ li {
   padding-top: 70px;
 }
 
-.b-bottom h1 {
+h1 {
   color: #002f34;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,5 +231,320 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.nu2 {
+  background-color: #f2f4f5;
+  padding-top: 70px;
+}
+
+.mainb1 {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainb1 h1 {
+  margin-bottom: 60px;
+}
+
+.mainb1 div {
+  height: 400px;
+  background-color: #fff;
+  width: 24%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.mainb1 div img {
+  width: 280px;
+  height: 230px;
+  margin-bottom: 10px;
+}
+
+.mainb1 div a {
+  color: #000;
+}
+
+.mainb1 div a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.mainb1 div h6 {
+  color: rgba(0, 0, 0, 0.527);
+  margin-top: 30px;
+}
+
+.mainb1 div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 99%;
+  height: 30px;
+  padding: 0;
+}
+
+.mainb1 div div p {
+  color: #000;
+  margin-top: 20px;
+}
+
+.mainb1 div div a:hover {
+  background-color: transparent;
+}
+
+.mainb1 div div a i {
+  color: #000;
+  margin-top: 15px;
+  opacity: 40%;
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mainb1 div div a i:hover {
+  opacity: 100%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hammasi {
+  margin-top: 40px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hammasi p {
+  width: 220px;
+  height: 60px;
+  color: #002f34;
+  padding: 10px 30px;
+  border: 3px solid #002f34;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hammasi p:hover {
+  border: 8px solid #002f34;
+}
+
+.whitef {
+  color: #fff;
+}
+
+.top-b {
+  background-color: #002f34;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-b img {
+  margin-right: 40px;
+}
+
+.top-b .bata {
+  margin-left: 50px;
+  padding: 10px 70px;
+  background-color: #fff;
+  color: #002f34;
+  border-radius: 5px;
+  border: 5px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.top-b .bata:hover {
+  background-color: #002f34;
+  color: #fff;
+}
+
+.bottom-b {
+  background-color: #cbf7ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+}
+
+.bottom-b img {
+  width: 10px;
+}
+
+.bottom-b p {
+  color: #002f34;
+  margin: auto;
+  width: 780px;
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 70px;
+}
+
+.con {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.white-b {
+  padding-top: 70px;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.336);
+  background-color: #f2f4f5;
+  padding-bottom: 70px;
+}
+
+.white-b img {
+  width: 180px;
+}
+
+.black-f {
+  color: #000;
+  font-size: 100%;
+}
+
+.sele {
+  border: transparent;
+  font-size: 16px;
+  margin-left: -4px;
+  margin-bottom: 30px;
+  margin-top: 8px;
+  background-color: transparent;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.226);
+}
+
+.sele:focus {
+  border: none;
+  outline: none;
+}
+
+footer {
+  padding: 70px 100px 90px 100px;
+  background-color: #f2f4f5;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 60px;
+}
+
+footer div div ul li a {
+  line-height: 30px;
+  color: #000;
+}
+
+footer div.f-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+}
+
+footer div.f-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85px;
+  font-size: 12px;
+}
+
+footer div.f-block a:hover .flag {
+  opacity: 100%;
+}
+
+.play {
+  margin-right: 10px;
+}
+
+.nof {
+  display: block;
+}
+
+.nof h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 50%;
+}
+
+.flag {
+  width: 20px;
+  opacity: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-left: 15px;
 }
 /*# sourceMappingURL=main.css.map */
