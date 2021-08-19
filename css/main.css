@@ -12,6 +12,7 @@ header {
   background-color: #002f34;
   position: fixed;
   width: 100vw;
+  z-index: 10000px;
 }
 
 .logo {
@@ -38,7 +39,8 @@ header {
 }
 
 .container {
-  padding: 0 100px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 ul.ul-small li {
@@ -86,17 +88,20 @@ li {
   height: 100vh;
 }
 
-.b-top {
-  height: 30%;
+.bg-grey {
   background-color: #f2f4f5;
-  padding-top: 120px;
 }
 
-.b-top i.icon1 {
-  font-size: 25px;
-  position: absolute;
-  top: 135px;
-  left: 115px;
+.b-top {
+  height: 30%;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .b-top i.icon2 {
@@ -104,6 +109,18 @@ li {
   position: absolute;
   top: 135px;
   left: 925px;
+}
+
+.b-top .btn {
+  background-color: #fff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin-bottom: -10px;
+}
+
+.b-top .btn i.icon1 {
+  font-size: 25px;
 }
 
 .qidiruv {
@@ -135,13 +152,13 @@ li {
 }
 
 .search-i {
-  width: 60%;
+  width: 50%;
   height: 60px;
   font-size: 20px;
-  padding-left: 60px;
   background-color: #fff;
   border: none;
   color: #002f34;
+  margin-left: -10px;
 }
 
 .search-i:focus {
@@ -170,6 +187,7 @@ li {
 
 .b-bottom {
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 h1 {
@@ -257,7 +275,6 @@ h4 {
 }
 
 .mainb1 div {
-  height: 400px;
   background-color: #fff;
   width: 24%;
   border-radius: 10px;
