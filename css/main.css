@@ -12,7 +12,8 @@ header {
   background-color: #002f34;
   position: fixed;
   width: 100vw;
-  z-index: 10000px;
+  z-index: 10000;
+  top: 0;
 }
 
 .logo {
@@ -96,6 +97,9 @@ li {
   height: 30%;
   padding-top: 120px;
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,9 +110,6 @@ li {
 
 .b-top i.icon2 {
   font-size: 25px;
-  position: absolute;
-  top: 135px;
-  left: 925px;
 }
 
 .b-top .btn {
@@ -116,23 +117,38 @@ li {
   border: none;
   width: 60px;
   height: 60px;
-  margin-bottom: -10px;
 }
 
 .b-top .btn i.icon1 {
   font-size: 25px;
 }
 
+.btn1 {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .qidiruv {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 14%;
   height: 60px;
   background-color: #fff;
   color: #002f34;
   text-align: center;
-  padding-top: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 3%;
 }
 
 .qidiruv:hover {
@@ -144,11 +160,12 @@ li {
   color: #fff;
 }
 
+.qidiruv:hover .btn1 {
+  background-color: #002f34;
+}
+
 .icon3 {
   font-size: 25px;
-  position: absolute;
-  top: 140px;
-  left: 1380px;
 }
 
 .search-i {
@@ -158,7 +175,7 @@ li {
   background-color: #fff;
   border: none;
   color: #002f34;
-  margin-left: -10px;
+  margin-right: 4px;
 }
 
 .search-i:focus {
@@ -170,10 +187,10 @@ li {
   width: 25%;
   height: 60px;
   font-size: 20px;
-  padding-left: 60px;
   background-color: #fff;
   border: none;
   color: #002f34;
+  margin-right: 4px;
 }
 
 .text-i:focus {
@@ -209,10 +226,27 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-b div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-b2 {
@@ -268,6 +302,8 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mainb1 h1 {
@@ -283,8 +319,7 @@ h4 {
 }
 
 .mainb1 div img {
-  width: 280px;
-  height: 230px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -563,5 +598,73 @@ footer div.f-block a:hover .flag {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   margin-left: 15px;
+}
+
+@media (max-width: 1843px) {
+  .main-b {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 980px) {
+  .main-b {
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+  }
+  .main-b div {
+    margin-left: 20px;
+  }
+  .b-bottom {
+    width: 100%;
+  }
+  .mainb1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: space-around;
+            flex-direction: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mainb1 div {
+    width: 45%;
+  }
+  .top-b {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bottom-b p {
+    width: 100%;
+  }
+  .qidiruv {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .qidiruv p {
+    display: none;
+  }
+  .qidiruv i {
+    margin-left: -30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
