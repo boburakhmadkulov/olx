@@ -163,6 +163,7 @@ h1{
     margin-bottom: 30px;
     flex-wrap: wrap;
     div{
+        margin-right: 2%;
         a{
             display: flex;
             flex-direction: column;
@@ -379,6 +380,7 @@ footer{
             justify-content: space-between;
             align-items: center;
             flex-direction: row;
+            flex-wrap: wrap;
             width: 85px;
             font-size: 12px;
             &:hover .flag{opacity: 100%;}
@@ -540,5 +542,27 @@ footer{
         div{
             flex-wrap: wrap;
         }
+    }
+}
+@media(max-width:360px){
+    .elon-berish{
+        display: none;
+    }
+    .nu3{
+        display: none;
+    }
+    div.f-block{
+        width: 200px;
+        overflow-x: scroll;
+        // a{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     flex-direction: row;
+        //     flex-wrap: wrap;
+        //     width: 85px;
+        //     font-size: 12px;
+        //     &:hover .flag{opacity: 100%;}
+        // }
     }
 }

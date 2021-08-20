@@ -236,6 +236,10 @@ h1 {
       flex-wrap: wrap;
 }
 
+.main-b div {
+  margin-right: 2%;
+}
+
 .main-b div a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +573,8 @@ footer div.f-block a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 85px;
   font-size: 12px;
 }
@@ -765,6 +771,19 @@ footer div.f-block a:hover .flag {
   footer div {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .elon-berish {
+    display: none;
+  }
+  .nu3 {
+    display: none;
+  }
+  div.f-block {
+    width: 200px;
+    overflow-x: scroll;
   }
 }
 /*# sourceMappingURL=main.css.map */
